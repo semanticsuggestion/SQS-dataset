@@ -1,6 +1,6 @@
 # SQS-dataset
 Semantic Query Suggestion Dataset
-*******************************************************************************
+
 
 ## CORPUS description 
 The corpus-Based query suggestion model has been evaluated by indexing
@@ -11,6 +11,7 @@ The dataset is available at the following url
 http://data.dws.informatik.uni-mannheim.de/dbpedia/2014/en/long_abstracts_en.nt.bz2
 
 RDF entry example:
+- - -
 `<http://dbpedia.org/resource/Academy_Awards> 
 <http://dbpedia.org/ontology/abstract> 
 "The Academy Awards, commonly known as The Oscars, is an annual American awards ceremony honoring 
@@ -23,7 +24,7 @@ The Oscars is also the oldest entertainment awards ceremony; its equivalents, th
 for television, the Tony Awards for theatre, and the Grammy Awards for music and recording, 
 are modeled after the Academy Awards.The 86th Academy Awards ceremony was held on March 2, 2014, 
 at the Dolby Theatre in Los Angeles."@en .`
-
+- - -
 The whole dataset is composed of 4,636,225 article abstracts.
 Only the abstract text (no title) has been indexed for each RDF entry.
 Noun phrases were extracted from abstract using OpenNLP chunker (http://opennlp.apache.org/).
