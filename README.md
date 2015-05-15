@@ -51,6 +51,7 @@ the query formulation.
 Topic examples:
 - - -
 `vivaldi > baroque composer
+
 agile software development > extreme programming`
 - - -
 The character '**>**' splits the context from the target.
@@ -68,6 +69,7 @@ By adopting the TREC format, it is possible to use the trec_eval tool (http://tr
 Qrel example format:
 - - -
 `vivaldi 0 baroque-composer 1
+
 agile-software-development 0 extreme-programming 1`
 - - -
 
