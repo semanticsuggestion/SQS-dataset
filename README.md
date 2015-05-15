@@ -1,5 +1,7 @@
 # SQS-dataset
-Semantic Query Suggestion Dataset
+**Semantic Query Suggestion Dataset**
+
+Corpus-Based Semantic Query Suggestion through Factor Graphs
 
 
 ## CORPUS description 
@@ -25,7 +27,7 @@ for television, the Tony Awards for theatre, and the Grammy Awards for music and
 are modeled after the Academy Awards.The 86th Academy Awards ceremony was held on March 2, 2014, 
 at the Dolby Theatre in Los Angeles."@en .`
 - - -
-The whole dataset is composed of 4,636,225 article abstracts.
+The whole dataset is composed of **4,636,225** article abstracts.
 Only the abstract text (no title) has been indexed for each RDF entry.
 Noun phrases were extracted from abstract using OpenNLP chunker (http://opennlp.apache.org/).
 The chunker was trained on conll2000 shared task dataset (the trained model is available here http://opennlp.sourceforge.net/models-1.5/en-chunker.bin). 
@@ -47,10 +49,11 @@ The target has been trucated at 25%, 50%, and 75% as to simulate the different c
 the query formulation.
 
 Topic examples:
-vivaldi > baroque composer
-agile software development > extreme programming
-
-The character '>' splits the context from the target.
+- - -
+`vivaldi > baroque composer
+agile software development > extreme programming`
+- - -
+The character '**>**' splits the context from the target.
 From the above examples: 
 'vivaldi' and 'agile software development' are the query context, 
 'baroque composer' and 'extreme programming' are the phrase targets.
@@ -63,8 +66,10 @@ This file is a relevance judgement for query suggestion compliant with the TREC 
 By adopting the TREC format, it is possible to use the trec_eval tool (http://trec.nist.gov/trec_eval/) to assess metrics on the top-10 suggestions.
 
 Qrel example format:
-vivaldi 0 baroque-composer 1
-agile-software-development 0 extreme-programming 1
+- - -
+`vivaldi 0 baroque-composer 1
+agile-software-development 0 extreme-programming 1`
+- - -
 
 In the qrels file, the space character has been replaced with '-' in order to avoid problems raised by trec_eval tool.
 The first field is the context of the topic, and it is always followed by 0. The third field is the target, and is always followed by 1, since only the 
